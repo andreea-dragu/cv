@@ -1,0 +1,161 @@
+/* =----- Intro Section -----= */
+.intro {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+} 
+
+.intro .container {
+    overflow-y: auto;
+    padding: 30px 30px 0;
+    margin: 30px auto;
+    height: 100%;
+    width: 100%;
+}
+
+.intro .title {
+    font-size: 62px;
+    margin-bottom: 10px;
+}
+
+.intro .subtitle {
+    font-size: 28px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 36px;
+}
+
+.intro .text {
+    margin: auto;
+    text-align: justify;
+    line-height: 36px;
+    font-size: 26px;
+    margin-bottom: 50px;
+}
+
+.intro .btn-access {
+    border: none;
+    padding: 16px 60px;
+    font-size: 28px;
+    background-color: #fff;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
+    margin-bottom: 50px;
+}
+
+.intro .btn-access:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;    
+}
+
+.intro ul.inline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro ul.inline li {
+    width: 33.33333333333333%;
+    text-align: center;
+}
+
+.intro ul.inline li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 22px;   
+}
+
+/* Responsive */
+@media (max-width: 1280px) {
+    .intro .title {
+        font-size: 50px;
+    }
+
+    .intro .subtitle {
+        font-size: 24px;
+    }
+
+    .intro .text {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+
+    .intro .btn-access {
+        margin-bottom: 20px;
+        font-size: 24px;
+        padding: 12px 40px;
+    }
+
+    .intro ul.inline li a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .intro .container {
+        padding: 0px 30px 0;
+    }
+
+    .intro .subtitle {
+        margin-bottom: 20px;
+    }
+
+    .intro ul.inline {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro ul.inline li {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .intro .title {
+        font-size: 40px;
+    }
+
+    .intro .subtitle {
+        font-size: 20px;
+    }
+
+    .intro .text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .intro .btn-access {
+        font-size: 20px;
+        padding: 12px 30px;
+    }
+
+    .intro ul.inline li a {
+        font-size: 18px;
+    }    
+
+    .intro ul.inline li {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro {
+        padding: 30px 10px;
+    }
+
+    .intro .container {
+        padding: 0px 10px 0;
+    }
+}

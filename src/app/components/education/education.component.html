@@ -1,0 +1,38 @@
+<section class="page animate__animated animate__fadeIn">
+    <div class="page__container">
+        <header class="page__header">
+            <h2 class="page__title ">Education</h2>
+            <button class="page__btn" (click)="onShow('menu', false)">  
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </button>
+        </header>
+        
+        <div class="page__content">
+            <h3 class="page__subTitle page__subTitle--withMargin colorized-text">Self Education</h3>
+            <div class="e-custom-grid mb-4">
+                <div class="iteration" *ngFor="let cat of educationPageData.selfEducation; index as i;" class="item{{i}}">
+                    <h3 class="iteration__title">{{ cat.categoryName }}</h3>
+                    <ul class="iteration__list list">
+                        <li class="list__item" *ngFor="let item of cat.items"><a href="{{ item.url }}" target="_blank">{{ item.name }}</a></li>
+                    </ul>
+                </div>
+            </div>  
+            
+            <h3 class="page__subTitle page__subTitle--withMargin colorized-text">School Education</h3>
+            <div class="e-custom-grid">
+                <div class="iteration school" *ngFor="let item of educationPageData.schoolEducation; index as i;">
+                    <h3 class="iteration__title iteration__title--small">{{ item.name }}</h3>
+                    <ul class="iteration__list list">
+                        <li class="list__item" *ngIf="item.university"><strong>University</strong>: {{ item.university }}</li>
+                        <li class="list__item"><strong>Specialization</strong>: {{ item.specialization }}</li>
+                        <li class="list__item"><strong>Graduation</strong>: {{ item.graduation }}</li>
+                        <li class="list__item"><strong>Degree</strong>: {{ item.degree }}</li>
+                        <li class="list__item"><strong>Location</strong>: {{ item.location }}</li>
+                    </ul>
+                </div>
+            </div>                   
+        </div>
+    </div>
+</section>

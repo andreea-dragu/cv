@@ -1,0 +1,23 @@
+<section class="page animate__animated animate__fadeIn">
+    <div class="page__container">
+        <header class="page__header">
+            <h2 class="page__title">Work</h2>
+            <button class="page__btn" (click)="onShow('menu', false)">  
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </button>
+        </header> 
+
+        <div class="page__content page__content--center">
+            <ul class="w-custom-grid">
+                <li class="job" *ngFor="let job of workPageData.reverse(); index as i; first as isFirst">
+                    <h3 class="colorized-text job__title">{{ job.name }}</h3>
+                    <h4 class="job__role">{{ job.role }}</h4>
+                    <div class="job__time">{{ job.periodOfTime }}</div>
+                    <span class="job__current" *ngIf="isFirst">current job</span>
+                </li>
+            </ul>
+        </div>
+    </div>            
+</section>

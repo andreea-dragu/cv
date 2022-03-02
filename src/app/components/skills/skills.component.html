@@ -1,0 +1,29 @@
+<section class="page animate__animated animate__fadeIn">
+    <div class="page__container">
+        <header class="page__header">
+            <h2 class="page__title">Skills</h2>
+            <button class="page__btn" (click)="onShow('menu', false)">  
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </button>
+        </header>
+
+        <div class="page__content">
+            <div class="flex-of-3 mb-5">
+                <div class="iteration" *ngFor="let cat of skillsPageData.skills;">
+                    <h3 class="iteration__title colorized-text">{{ cat.categoryName }}</h3>
+                    <ul class="iteration__list list">
+                        <li class="list__item" *ngFor="let skill of cat.categorySkills">{{ skill }}</li>
+                    </ul>
+                </div>
+            </div>              
+            <div class="iteration">
+                <h3 class="page__title page__title--withMargin">Tools</h3>
+                <ul class="iteration__list iteration__list--2columns list">
+                    <li class="list__item" *ngFor="let tool of skillsPageData.tools">{{ tool }}</li>
+                </ul>
+            </div>             
+        </div>
+    </div>
+</section>
