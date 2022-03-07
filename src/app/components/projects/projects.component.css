@@ -45,35 +45,35 @@
     text-align: center;
     border-radius: 6px;
     transition: 0.5s;
-    box-shadow: 0 0 20px #eee; 
-    color: white; 
-    font-weight: 500; 
-    cursor: pointer;  
+    box-shadow: 0 0 20px var(--whiteBoxShadow);
+    color: var(--whiteColor);
+    font-weight: 500;
+    cursor: pointer;
 }
 
 .project .project__actions .project__action.project__action--live {
-    background-color: #4776E6;
-    background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
+    background-color: var(--secondaryColor);
+    background-image: linear-gradient(to right, var(--secondaryColor) 0%, var(--primaryColor) 51%, var(--secondaryColor) 100%);
     background-size: 200% auto;
 }
 
 .project .project__actions .project__action.project__action--live:hover {
     background-position: right center;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .project .project__actions .project__action.project__action--git {
-    background: #111;
+    background: var(--blackColor);
 }
 
 .project .project__actions .project__action.project__action--git svg {
-    fill: #fff;
+    fill: var(--whiteColor);
     vertical-align: middle;
     margin-right: 4px;
 }
 
 .project .project__actions .project__action.project__action--git:hover svg {
-    fill: #8E54E9;
+    fill: var(--primaryColor);
 }
 
 /* Responsive */
