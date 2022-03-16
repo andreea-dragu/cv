@@ -260,11 +260,11 @@ button {
 .page .page__btn > .bar3 { width: 70%; margin-bottom: 0; }
 
 .page .page__btn:hover > .bar {
-    background-color: var(--whiteColor);
+    background-color: var(--blackColor);
     width: 100%;
     transition: width 0.5s ease-out;
     background-size: 200% auto;
-    background-image: linear-gradient(to right, var(--secondaryColor) 0%, var(--primarylor) 51%, var(--secondaryColor) 100%);
+    background: linear-gradient(to right, var(--secondaryColor) 0%, var(--primaryColor) 51%, var(--secondaryColor) 100%);
 }
 
 /* Responsive */
