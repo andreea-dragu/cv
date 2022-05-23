@@ -10,21 +10,26 @@ export class WorkComponent implements OnInit {
 
   workPageData: any = [
     {
-      name: 'Spectrum Creations',
-      role: 'Front-End Developer',
-      periodOfTime: '2016 - 2018'
+      name: 'Signal Iduna',
+      role: 'Health Insurance Agent',
+      periodOfTime: 'february 2016 - may 2018'
     },
     {
       name: 'Neuron Technologies',
       role: 'Front-End Developer',
-      periodOfTime: '2018 - 2020'
-    },    
+      periodOfTime: 'may 2018 - april 2021'
+    },
     {
       name: 'Freelancer',
       role: 'Front-End Developer',
-      periodOfTime: '2020 - Current'
-    },    
-  ];  
+      periodOfTime: 'march 2021 - january 2022'
+    },
+    {
+      name: 'Luxoft',
+      role: 'Front-End Developer',
+      periodOfTime: 'february 2022 - Current'
+    }
+  ];
 
   constructor() { }
 
