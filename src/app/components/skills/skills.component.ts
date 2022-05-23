@@ -15,7 +15,8 @@ export class SkillsComponent implements OnInit {
           'TypeScript',
           'JavaScript (ES6+)',
           'HTML',
-          'CSS/SCSS'        
+          'CSS/SCSS',
+          'NPM/PNPM'
         ]
       },
       {
@@ -31,7 +32,7 @@ export class SkillsComponent implements OnInit {
         ]
       }
     ],
-    tools: ['Visual Studio Code', 'GitHub', 'Figma', 'Photoshop', 'Affinity Designer']
+    tools: ['Visual Studio Code', 'GitHub', 'Docker', 'Teams', 'Figma', 'Photoshop', 'Affinity Designer']
   };
 
   constructor() { }
@@ -45,5 +46,5 @@ export class SkillsComponent implements OnInit {
       isPage
     };
     this.navigationInfo.emit(navigationOptions);
-  }  
+  }
 }
